@@ -20,7 +20,7 @@ We want this technical test to be close to our development environment, so the p
 
 From an infrastructure perspective, Inquisitive arguably runs on a full serverless stack. We use AWS Lambda for the main computing power, RDS + S3 for the storage, API Gateway, Cloudfront, SES, EventBridge, AppFlow, Kinesis and a few other services from AWS.
 
-From an application architecture perspective, Inqusitive is full stack TypeScript/JavaScript, meaning that we write TypeScript in both backend and frontend. More specicically we use React in frontend, Apollo Server running on NodeJS in the backend, GraphqQL is the API interface. 
+From an application architecture perspective, Inqusitive is full stack TypeScript/JavaScript, meaning that we write TypeScript in both backend and frontend. More specicically we use React in frontend, Apollo Server running on NodeJS in the backend, GraphqQL is the API interface.
 
 We also use SnowFlake, Metabase, Salesforce etc. for data warehouse, data analyzing, reporting and so on. We heavily rely on data to make bussiness decisions.
 
@@ -59,6 +59,7 @@ In `task1.ts`, write a function, in the function make a POST call to https://api
 ```json
 {
   "operationName": "ContentBrowser",
+  "query": "query ContentBrowser($input: ContentBrowserInput!) { contentBrowser(input: $input) {  topics { name  units { name  lessons { id name   subjects { id name } years { id name } }  } } }}",
   "variables": {
     "input": {
       "years": ["1", "2", "3", "4"],
@@ -69,8 +70,7 @@ In `task1.ts`, write a function, in the function make a POST call to https://api
       "includingFuture": false,
       "includingEmptyTopic": false,
       "initialTopics": 10,
-      "topicIds": [],
-      "query": "query ContentBrowser($input: ContentBrowserInput!) { contentBrowser(input: $input) {  topics { name  units { name  lessons { id name   subjects { id name } years { id name } }  } } }}"
+      "topicIds": []
     }
   }
 }
@@ -345,6 +345,7 @@ After you get the credentails, create a file named `.env`, put the following int
 AWS_ACCESS_KEY_ID=the-id-you-received
 AWS_SECRET_ACCESS_KEY=the-key-you-received
 ```
+
 The `dovenv` library will load the environment variables from the `.env` into your local environment for aws-sdk to use.
 
 So now you can write your code in `task5.ts`, upload the exported CSV from the previous task to a S3 bucket we've created for you, the name of the bucket is `inquisitive-backend-developer-tests'`, you should upload the file under a folder with your name.
