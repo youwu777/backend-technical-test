@@ -54,7 +54,7 @@ You should see `Hello World`
 
 ### Task 2. Call Inquisitive GraphQL API
 
-In `task1.ts`, write a function, in the function make a POST call to https://api2.inquisitive.com/latest/graphql, with the following the payload, the function should return the response body in JSON format. You can use any external npm libraries to make the call.
+In `task2.ts`, write a function, in the function make a POST call to https://api2.inquisitive.com/latest/graphql, with the following the payload, the function should return the response body in JSON format. You can use any external npm libraries to make the call.
 
 ```json
 {
@@ -325,7 +325,7 @@ Year 2
 
 ### Task 4. Export to CSV
 
-Export the data from the previous task into a CSV format. For example,
+Export the data from the previous task into a CSV file, and store it in your local file system. For example,
 
 | Year   | Subject   | Lesson                   |
 | ------ | --------- | ------------------------ |
