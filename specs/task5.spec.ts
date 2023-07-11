@@ -1,4 +1,4 @@
-import { uploadCsvToS3 } from './task5';
+import { uploadCsvToS3 } from '../task5';
 import fs from 'fs';
 import AWS from 'aws-sdk';
 

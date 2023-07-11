@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { retriveData, ContentBrowserData } from './task2';
+import { retriveData, ContentBrowserData } from '../task2';
 
 jest.mock('axios');
 

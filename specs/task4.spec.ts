@@ -1,4 +1,4 @@
-import { saveDataToCsv } from './task4';
+import { saveDataToCsv } from '../task4';
 import csvParser from 'csv-parser';
 import fs from 'fs';
 

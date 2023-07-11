@@ -1,4 +1,4 @@
-import { transformData, TransformedData } from './task3';
+import { transformData, TransformedData } from '../task3';
 
 describe('transformData', () => {
   it('should transform content browser data into transformed data format', () => {
