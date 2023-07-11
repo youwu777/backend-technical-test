@@ -1,6 +1,7 @@
 import { uploadCsvToS3 } from '../task5';
 import fs from 'fs';
 import AWS from 'aws-sdk';
+import * as path from 'path';
 
 describe('uploadCsvToS3', () => {
   it('should upload the CSV file to the specified S3 bucket', async () => {
@@ -20,9 +21,9 @@ describe('uploadCsvToS3', () => {
     };
     jest.spyOn(fs, 'createReadStream').mockReturnValue(fileStreamMock);
 
-    const filePath = 'path/to/your/csv/file.csv';
+    const fileName = 'file.csv';
 
-    await uploadCsvToS3(filePath);
+    await uploadCsvToS3(fileName);
 
     expect(putObjectMock).toHaveBeenCalledTimes(1);
     expect(putObjectMock).toHaveBeenCalledWith({
@@ -32,7 +33,7 @@ describe('uploadCsvToS3', () => {
     });
     expect(promiseMock).toHaveBeenCalledTimes(1);
     expect(consoleLogSpy).toHaveBeenCalledWith(
-      `CSV file '${filePath}' uploaded to S3 bucket 'inquisitive-backend-developer-tests' with key 'youwu/result.csv'`
+      `CSV file '${path.resolve(__dirname,'..', fileName)}' uploaded to S3 bucket 'inquisitive-backend-developer-tests' with key 'youwu/result.csv'`
     );
   });
 
@@ -52,9 +53,9 @@ describe('uploadCsvToS3', () => {
     };
     jest.spyOn(fs, 'createReadStream').mockReturnValue(fileStreamMock);
 
-    const filePath = 'path/to/your/csv/file.csv';
+    const fileName = 'file.csv';
 
-    await expect(uploadCsvToS3(filePath)).rejects.toThrowError('Upload error');
+    await expect(uploadCsvToS3(fileName)).rejects.toThrowError('Upload error');
     expect(putObjectMock).toHaveBeenCalledTimes(1);
     expect(putObjectMock).toHaveBeenCalledWith({
       Bucket: 'inquisitive-backend-developer-tests',

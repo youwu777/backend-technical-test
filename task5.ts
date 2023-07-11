@@ -1,8 +1,10 @@
 import * as dotenv from 'dotenv'
 import AWS from 'aws-sdk';
 import fs from 'fs';
+import * as path from 'path';
 
-async function uploadCsvToS3(filePath: string): Promise<void> {
+async function uploadCsvToS3(fileName: string): Promise<void> {
+  const filePath = path.resolve(__dirname, fileName)
   dotenv.config();
   console.log(`AWS_ACCESS_KEY_ID=${process.env.AWS_ACCESS_KEY_ID}`);
   console.log(`AWS_SECRET_ACCESS_KEY=${process.env.AWS_SECRET_ACCESS_KEY}`);

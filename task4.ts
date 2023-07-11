@@ -19,7 +19,7 @@ function flattenRecords(transformedData :TransformedData): RecordsData{
   return recordsData
 }
 
-async function saveDataToCsv(transformedData : TransformedData, fileName: string): Promise<string> {
+async function saveDataToCsv(transformedData : TransformedData, fileName: string): Promise<void> {
   const writer = createObjectCsvWriter({
     path: path.resolve(__dirname, fileName),
     header: [
@@ -35,7 +35,6 @@ async function saveDataToCsv(transformedData : TransformedData, fileName: string
     // write data into csv
     await writer.writeRecords(recordsData)
     console.log(`data been written into ${path.resolve(__dirname, fileName)}`);
-    return path.resolve(__dirname, fileName); 
   } catch (error) {
     console.error('Error writing CSV file:', error);
     throw error;
