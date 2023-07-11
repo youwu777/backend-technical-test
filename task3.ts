@@ -1,10 +1,4 @@
-import { ContentBrowserData } from './task2'
-
-type TransformedData = {
-  [year: string]: {
-    [subject: string]: string[];
-  };
-};
+import { ContentBrowserData, TransformedData } from './types';
 
 function createOrPush(transformedData: TransformedData, year: string, subject: string,  lesson: string): TransformedData{
   if (!transformedData[year]){

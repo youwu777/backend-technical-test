@@ -1,27 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-
-type ContentBrowserData = {
-  contentBrowser: {
-    topics: {
-      name: string;
-      units: {
-        name: string;
-        lessons: {
-          id: string;
-          name: string;
-          subjects: {
-            id: string;
-            name: string;
-          }[];
-          years: {
-            id: string;
-            name: string;
-          }[];
-        }[];
-      }[];
-    }[];
-  }
-}
+import { ContentBrowserData } from './types';
 
 async function retriveData(): Promise<ContentBrowserData> {
   const url = 'https://api2.inquisitive.com/latest/graphql';

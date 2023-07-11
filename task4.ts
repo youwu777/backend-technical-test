@@ -1,12 +1,7 @@
-import { TransformedData } from './task3'
+import { TransformedData, RecordsData } from './types'
 import { createObjectCsvWriter } from 'csv-writer'
 import * as path from 'path';
 
-type RecordsData = {
-  year: string;
-  subject: string;
-  lesson: string;
-}[]
 
 function flattenRecords(transformedData :TransformedData): RecordsData{
   let recordsData : RecordsData = [];

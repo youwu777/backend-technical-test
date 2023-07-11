@@ -1,6 +1,109 @@
 year,subject,lesson
-Year 1,Subject 1,Lesson 1
-Year 1,Subject 2,Lesson 2
-Year 2,Subject 1,Lesson 3
-Year 2,Subject 1,Lesson 4
-Year 2,Subject 3,Lesson 5
+1,science-and-technology,Features of Animals
+1,science-and-technology,Features of Plants
+1,science-and-technology,Grouping Animals
+1,science-and-technology,Animals' Homes
+1,science-and-technology,Helping Animals
+1,science-and-technology,What a Pest
+1,science-and-technology,Changing Things Up!
+1,science-and-technology,Let's Get Physical
+1,science-and-technology,Heating and Cooling
+1,science-and-technology,Making Sense
+1,science-and-technology,Turn on the Lights
+1,science-and-technology,Good Vibrations
+1,science-and-technology,Turn the Sound Up
+1,science-and-technology,The Heat is On
+1,science-and-technology,Patterns of the Sun
+1,science-and-technology,Changing Landscapes
+1,science-and-technology,The Night Sky
+1,science-and-technology,When Seasons Change
+1,science-and-technology,Changing Weather
+1,science-and-technology,Weather Collectors
+1,science-and-technology,Let's Take a Look Around!
+1,science-and-technology,Everyday Connections
+1,science-and-technology,We're All in This Together
+1,english,What Jobs do Words Have?
+1,english,Words: Factual or Imaginative?
+1,english,Words Tell a Story
+1,english,Words Inform
+1,english,Words Are Imaginative
+1,english,Farm Life
+1,english,The Boss on the Farm
+1,english,Words and Pictures Work Together
+1,english,Farmers Wanted
+1,english,Learning New Things
+1,english,Words Connect Us
+1,english,Words Describe Action
+1,english,Words Command
+1,english,Mastering Haiku
+1,english,Jumping into Haiku - Guided Read Through
+1,english,It Makes Sense
+1,english,Diving Deep - Guided Read Through
+1,english,It's in Season
+1,english,The Simple Life
+1,english,Gift of the Present
+1,english,A Pre-PONDER-ance of Haiku!
+1,english,Teacher Information
+1,english,Final Posting
+1,english,Planning for Success
+1,english,Next Door Monster
+1,maths,One Ten and Some More
+1,maths,Partitioning Tens and Ones
+1,maths,Part-Whole Model
+1,maths,Groups of Ten
+1,maths,Line Them Up
+1,maths,"Location, Location"
+1,maths,Order on the Line
+1,maths,Exploring Number Charts
+1,maths,Introducing the + and = Symbols
+1,maths,Exploring Equivalency
+1,maths,Introducing the Subtraction Symbol
+1,maths,Related Addition and Subtraction Facts
+1,maths,Making Ten
+1,maths,Finding Combinations
+1,maths,Doubles
+1,maths,Describing Combinations
+1,maths,Counting On
+1,maths,Counting Back
+1,maths,Counting-Up-To
+1,maths,Solving Missing Number Problems
+1,maths,Skip 2 It!
+1,maths,Rules for Counting by Twos
+1,maths,Odd and Even Numbers
+1,maths,Investigating Odd and Even Numbers
+1,maths,Recognising and Continuing Repeated Patterns
+1,maths,Pattern Creators
+1,maths,Skip Counting By 10s
+1,maths,Skip Counting By 5s
+1,maths,Near Doubles Addition Strategy
+1,maths,Make 10 Addition Strategy
+1,maths,Bridging to 10 Addition Strategy
+1,maths,Bridging to 10 Subtraction Strategy
+1,maths,Partitioning 86
+1,maths,Flexible Partitioning
+1,maths,Representing Partitioning
+1,maths,Three Parts
+1,maths,Groups Of
+1,maths,Describing Groups
+1,maths,Skip Counting Groups
+1,maths, Solving Equal Grouping Problems
+1,maths,Halving Collections
+1,maths,Sharing Division
+1,maths,Grouping Division
+1,maths,Describing the Part Left Over
+1,history,Time Traveller
+1,history,"Days, Months and Seasons"
+1,history,Different Seasons
+1,history,Now I am Six
+1,history,Special Days
+1,history,We are Family
+1,history,Family Connections
+1,history,Families Then and Now
+1,history,Family Roles
+1,history,How Times Have Changed
+1,history,Let's Play
+1,history,Step Back in Time
+2,science-and-technology,All Mixed Up!
+2,science-and-technology,It's All Natural to Me
+2,science-and-technology,It's a Material World
+2,science-and-technology,"Baby, It's Cold Outside!"
