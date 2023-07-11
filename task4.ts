@@ -19,8 +19,7 @@ function flattenRecords(transformedData :TransformedData): RecordsData{
   return recordsData
 }
 
-function saveDataToCsv(transformedData : TransformedData): string {
-  const fileName = "csvdata.csv";
+function saveDataToCsv(transformedData : TransformedData, fileName: string): string {
   const writer = createObjectCsvWriter({
     path: path.resolve(__dirname, fileName),
     header: [

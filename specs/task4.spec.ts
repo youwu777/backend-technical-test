@@ -15,7 +15,7 @@ describe('saveDataToCsv', () => {
       },
     };
 
-    const csvFilePath = saveDataToCsv(transformedData);
+    const csvFilePath = saveDataToCsv(transformedData,'test.csv');
 
     const records: any = [];
     fs.createReadStream(csvFilePath)
@@ -26,5 +26,6 @@ describe('saveDataToCsv', () => {
       .on('end', () => {
         expect(records).toHaveLength(5);
       });
+    fs.unlinkSync('test.csv');
   });
 });
